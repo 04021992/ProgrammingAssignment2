@@ -27,8 +27,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-        The cacheSolve<-function(x)
-{
+        
+
 	m<-x$getinverse()##Gets the inverse of the matrix and stores it in m
 	if(!is.null(m)) ##Checking whether the inverse is already calculated. If yes, then the data will be taken out from the cache
 	{
@@ -40,7 +40,7 @@ cacheSolve <- function(x, ...) {
 	x$setinverse(m)##Setting the inverse by using lexical scoping
 	
     m
-}
+
 
 
 }
